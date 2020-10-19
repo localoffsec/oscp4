@@ -93,7 +93,7 @@ info taken from: https://medium.com/@falconspy/unofficial-oscp-approved-tools-b2
 5. Web Related
 6. Dirsearch — https://github.com/maurosoria/dirsearch
 7. GoBuster — https://github.com/OJ/gobuster
-8. Recursive GoBuster — https://github.com/epi052/recursive-gobuster
+8. Feroxbuster — https://github.com/epi052/feroxbuster
 9. wfuzz — https://github.com/xmendez/wfuzz
 10. goWAPT — https://github.com/dzonerzy/goWAPT
 11. ffuf — https://github.com/ffuf/ffuf
