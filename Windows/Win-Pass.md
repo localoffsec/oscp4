@@ -1,39 +1,90 @@
+# Find proof.txt or local.txt
+```
+cd c:\Users\administrator\Desktop
+dir *.txt /s /p
+
+cd C:\
+dir secret.doc /s /p
+```
+The /s option directs a search of all folders on the hard drive; the /p option pauses the display after each screen of text. Double-check everything!
+
+
 # Passwords In Files:
 These are common files to find them in. They might be base64-encoded. So look out for that.
 
 1. c:\sysprep.inf
 2. c:\sysprep\sysprep.xml
 3. c:\unattend.xml
-4. %WINDIR%\Panther\Unattend\Unattended.xml
-5. %WINDIR%\Panther\Unattended.xml
+4. c:\unattended.txt 
+5. %WINDIR%\Panther\Unattend\Unattended.xml
+6. %WINDIR%\Panther\Unattended.xml
 
+### search for unattended.xml files
+```
+Get-Childitem –Path C:\ -Include unattended.xml -Recurse -ErrorAction SilentlyContinue
+```
+
+## Sysprep:
+c:\sysprep.inf			    [Clear Text Password]
+c:\sysprep\sysprep.xml		[Base64 Encoded Password]
 
 ## clear text Passwords
-### findstr /si password *.txt *.ini *.config *.xml
+```
+findstr /si password *.txt *.ini *.config *.xml
+```
+
 Look through output. most will help files, but you might get lucky and find an actual password file. 
 
 ## Find all those strings in config files.
-### dir /s *pass* == *cred* == *vnc* == *.config*
+1. web.config
+2. php.ini
+3. httpd.conf
+4. access.log
+5. vnc.ini (easy to decrypt)
+6. ultravnc.ini (easy to decrypt)
+7. 
+
+```
+dir /s *pass* == *cred* == *vnc* == *.config*
+dir /s *pass*
+dir /s *cred*
+dir /s *vnc*
+dir /s *.config
+findstr /si password *.xml *.ini *.txt
+reg query HKLM /f password /t REG_SZ /s
+reg query HKCU /f password /t REG_SZ /s
+```
+
+## search for python:
+```
+dir *.py /s /p
+```
+
+## search for perl:
+```
+dir *.pl /s /p
+```
 
 ## Find all passwords in all files.
-### findstr /spin "password" *.*
+```
+findstr /spin "password" *.*
+```
 
 ## Other Searches
 ```
 dir c:\*unattend.xml /s /b
-```
-
-```
 dir c:\*vnc.ini /s /b
-```
-
-```
 dir c:\*ultravnc.ini /s /b 
-```
-
-```
 dir c:\ /s /b | findstr /si *vnc.ini
 ```
+
+## systems with citrix:
+check for c:\unattended.txt which may have clear text password for admin
+if so:
+```
+RUNAS /U:LOCALADMIN CMD.EXE
+```
+
 
 # Passwords In Registry:
 ## VNC
@@ -45,6 +96,13 @@ reg query "HKCU\Software\ORL\WinVNC3\Password"
 
 ```
 reg query "HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon"
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon\AlternateShells"
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon\GPExtensions"
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon\SpecialAccounts"
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon\UserDefaults"
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon\AutoLogonChecked"
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon\VolatileUserMgrKey"
 ```
 
 ## SNMP Paramters
@@ -63,6 +121,11 @@ reg query HKLM /f password /t REG_SZ /s
 reg query HKCU /f password /t REG_SZ /s
 ```
 
+Same command but saves the output to the clipboard for easy pasting.
+```
+reg query HKLM /f password /t REG_SZ /s | clip 
+reg query HKCU /f password /t REG_SZ /s | clip 
+```
 
 
 # WiFi Passwords
