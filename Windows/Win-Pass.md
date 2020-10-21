@@ -19,6 +19,7 @@ These are common files to find them in. They might be base64-encoded. So look ou
 5. %WINDIR%\Panther\Unattend\Unattended.xml
 6. %WINDIR%\Panther\Unattended.xml
 
+
 ### search for unattended.xml files
 ```
 Get-Childitem –Path C:\ -Include unattended.xml -Recurse -ErrorAction SilentlyContinue
