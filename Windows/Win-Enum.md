@@ -94,9 +94,18 @@ F:       Local Fixed Disk
 G:       Local Fixed Disk
 ```
 
+## Check folder permissions:
+icacls C:\<Folder\Location>
+looking for (WD) or (AD)
+- Delete: removes files or DLLs
+- Write Data/ Add File: add a DLL that is sideloaded into an application with elevated privileges
+- Write Attributes: set file attributes to hidden or system, poenially hiding them from view by most users
+- Append Data: allows the user to add data to the end of a file, but not overwrite any existing data
+- Change Permissions: this is pretty much full control 
+
+
 # User Enumeration:
 ### C:\>whoami 
-
 
 ### C:\>whoami /priv
 ```
