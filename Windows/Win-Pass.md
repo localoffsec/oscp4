@@ -20,6 +20,10 @@ Look through output. most will help files, but you might get lucky and find an a
 
 ## Other Searches
 ```
+dir c:\*unattend.xml /s /b
+```
+
+```
 dir c:\*vnc.ini /s /b
 ```
 
