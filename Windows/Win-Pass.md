@@ -155,6 +155,14 @@ ls -r *.txt | Select-String -Pattern "password" | Select Path, LineNumber | Form
 ls -r *.txt | Select-String -Pattern "password" -ErrorAction SilentlyContinue
 ```
 
+
+# Powershell Wifi Password Greb
+## Grab all wifi passwords and format the output to be easy to read:
+```
+(netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | % {(netsh wlan show profile name="$name" key=clear)} | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ SSID=$name;PASSWORD=$pass }} | Format-Table -AutoSize
+```
+
+
 # WiFi Passwords
 ## Grab all wifi passwords and format the output to be easy to read:
 ```
@@ -225,11 +233,6 @@ Cost settings
 ```
 
 
-# Powershell Wifi Password Greb
-## Grab all wifi passwords and format the output to be easy to read:
-```
-(netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | % {(netsh wlan show profile name="$name" key=clear)} | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ SSID=$name;PASSWORD=$pass }} | Format-Table -AutoSize
-```
 
 
 
