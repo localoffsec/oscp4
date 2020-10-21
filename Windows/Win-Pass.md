@@ -68,6 +68,7 @@ dir *.pl /s /p
 ## Find all passwords in all files.
 ```
 findstr /spin "password" *.*
+findstr /si password *.txt | *.xml | *.ini | *.rdp | *.py | *.pl
 ```
 
 ## Other Searches
@@ -127,6 +128,31 @@ reg query HKLM /f password /t REG_SZ /s | clip
 reg query HKCU /f password /t REG_SZ /s | clip 
 ```
 
+
+
+
+## Powershell:
+search for specific files:
+```
+Get-Childitem –Path C:\ -Include *.py -Recurse -ErrorAction SilentlyContinue
+Get-Childitem –Path C:\ -Include *HSG* -Exclude *.JPG,*.MP3,*.TMP -File -Recurse -ErrorAction SilentlyContinue
+Get-ChildItem -Path C:\ -Include *.doc,*.docx -File -Recurse -ErrorAction SilentlyContinue
+```
+
+grep a string:
+search for any file that ends in .txt for the pattern (or string) pass
+```
+cd C:\
+Select-String -Path *.txt -Pattern "pass"
+ls -r | Select-String "test" | Select Path, LineNumber | Format-List
+```
+
+## Powershell search for all .txt files containing the phrase "password"
+```
+cd C:\
+ls -r *.txt | Select-String -Pattern "password" | Select Path, LineNumber | Format-List
+ls -r *.txt | Select-String -Pattern "password" -ErrorAction SilentlyContinue
+```
 
 # WiFi Passwords
 ## Grab all wifi passwords and format the output to be easy to read:
