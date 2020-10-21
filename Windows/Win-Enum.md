@@ -94,8 +94,20 @@ F:       Local Fixed Disk
 G:       Local Fixed Disk
 ```
 
-## Check folder permissions:
-icacls C:\<Folder\Location>
+## Next Check Folder Permissions:
+### icacls "C:\WINDOWS\system32\AppVClient.exe"
+```
+C:\>icacls "C:\WINDOWS\system32\AppVClient.exe"
+
+C:\WINDOWS\system32\AppVClient.exe NT SERVICE\TrustedInstaller:(F)
+                                   BUILTIN\Administrators:(RX)
+                                   NT AUTHORITY\SYSTEM:(RX)
+                                   BUILTIN\Users:(RX)
+                                   APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+                                   APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+```
 looking for (WD) or (AD)
 - Delete: removes files or DLLs
 - Write Data/ Add File: add a DLL that is sideloaded into an application with elevated privileges
