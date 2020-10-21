@@ -31,13 +31,14 @@ dir c:\*ultravnc.ini /s /b
 dir c:\ /s /b | findstr /si *vnc.ini
 ```
 
-#Passwords In Registry:
+# Passwords In Registry:
 ## VNC
 ```
 reg query "HKCU\Software\ORL\WinVNC3\Password"
-``
+```
 
 ## Windows autologin
+
 ```
 reg query "HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon"
 ```
