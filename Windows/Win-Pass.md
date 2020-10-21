@@ -26,8 +26,8 @@ Get-Childitem –Path C:\ -Include unattended.xml -Recurse -ErrorAction Silently
 ```
 
 ## Sysprep:
-c:\sysprep.inf			    [Clear Text Password]
-c:\sysprep\sysprep.xml		[Base64 Encoded Password]
+1. c:\sysprep.inf			    [Clear Text Password]
+2. c:\sysprep\sysprep.xml		[Base64 Encoded Password]
 
 ## clear text Passwords
 ```
@@ -43,7 +43,7 @@ Look through output. most will help files, but you might get lucky and find an a
 4. access.log
 5. vnc.ini (easy to decrypt)
 6. ultravnc.ini (easy to decrypt)
-7. 
+ 
 
 ```
 dir /s *pass* == *cred* == *vnc* == *.config*
