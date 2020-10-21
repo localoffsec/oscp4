@@ -1,4 +1,4 @@
-#Passwords In Files:
+# Passwords In Files:
 These are common files to find them in. They might be base64-encoded. So look out for that.
 
 1. c:\sysprep.inf
