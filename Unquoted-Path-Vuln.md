@@ -35,10 +35,10 @@ CommandLine
 C:\WINDOWS\system32>
 ```
 
-# References:
+## References:
 1. https://isc.sans.edu/forums/diary/Help+eliminate+unquoted+path+vulnerabilities/14464/
 2. https://medium.com/@SumitVerma101/windows-privilege-escalation-part-1-unquoted-service-path-c7a011a8d8ae
 3. https://ss64.com/nt/icacls.html
 
-### how to fix:
+## how to fix:
 https://www.commonexploits.com/unquoted-service-paths/
