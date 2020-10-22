@@ -48,6 +48,42 @@ OS Version:                10.0.18362 N/A Build 18362
 System Type:               x64-based PC
 ```
 
+### Network Information: 
+```
+ipconfig 
+```
+
+### Running Services: 
+```
+tasklist 
+```
+## List services that use the 
+### network functionality module ws2_32.dll
+```
+C:\Windows\system32> tasklist /m ws2_32.dll	
+```
+### Configure Windows machine as Access Point:
+```
+netsh wlan set hostednetwork mode=allow ssid=<my-ssid> key=<my-password> && netsh wlan start hostednetwork	
+```
+### get a list of TCP & UDP activity every second
+```
+netstat -naob 1 | find "<ip-address or port>"	
+```
+### get a list of all available attributes of all running processes
+```
+wmic process list full	
+```
+### get a list of services running inside of each process
+```
+tasklist /svc	# CMD
+```
+
+
+
+
+
+
 # Windows Management Instrumentation Commandline
 ## Winodws Updates
 ### wmic qfe
@@ -300,6 +336,145 @@ Lockout observation window (minutes):                 30
 Computer role:                                        WORKSTATION
 The command completed successfully.
 ```
+save output:
+```
+NET ACCOUNTS /DOMAIN >ACCOUNTS.TXT 
+```
+
+### NET CONFIG:
+This command will return the server name, version of Windows, active network adapter information/MAC address, Server hidden status, Maximum Logged On Users, Maximum open files per session, Idle session time, and assign it to a file called SERVER.TXT
+```
+NET CONFIG SERVER >SERVER.TXT 
+```
+
+This command will return the workstation name, user name, version of Windows, network adapter, network adapter information/MAC address, Logon domain, COM Open Timeout, COM Send Count, COM Send Timout, and write it to a file called WKST.TXT.
+```
+NET CONFIG WORKSTATION >WKST.TXT 
+```
+
+### net user
+Displays a list of all user accounts for the local computer
+```
+net user 
+```
+Displays information about the user \<account-name\> 
+```
+net user <account-name>
+net user /domain
+```
+
+
+### Net Group Syntax:
+```
+net group /domain admins
+net group /domain controllers
+```
+### List Groups
+```
+net group
+```
+Adds a group called \<group-name\> to the local user accounts database:
+```
+net group <group-name> /add
+```
+Adds the existing user accounts user1, user2, and user3 to the \<group-name\> group on the local computer
+```
+net group <group-name> user1 user2 user3 /add
+```
+Adds the existing user accounts user1, user2, and user3 to the \<group-name\> group in the domain database
+```
+net group <group-name> user1 user2 user3 /add /domain
+```
+List user of \<group-name\>
+```
+net group <group-name>
+```
+Adds a group called \<group-name\> to the domain database 
+```
+net group <group-name> /add /domain
+```
+
+### Net Computer Syntax:
+Adds the computer Grizzlybear to the domain database
+```
+net computer \\grizzlybear /add
+```
+
+### Net Localgroup Syntax:
+Displays a list of all the local groups on the local server, type:
+```
+net localgroup
+net localgroup administrators
+net localgroup admins
+net localgroup admin
+```
+
+Adds a local group called \<group-name\> to the local user accounts database
+```
+net localgroup <group-name> /add
+```
+Adds a local group called \<group-name\> to the domain user accounts database
+```
+net localgroup <group-name> /add /domain
+```
+Adds the existing user accounts stevev, ralphr (from the Sales domain), and jennyt to the \<group-name\> local group on the local computer
+```
+net localgroup \<group-name\> stevev sales\ralphr jennyt /add
+```
+Adds the existing user accounts stevev, ralphr, and jennyt to the \<group-name\> group of a domain
+```
+net localgroup <group-name> stevev ralphr jennyt /add /domain
+```
+Displays users in the \<group-name\> local group
+```
+net localgroup <group-name>
+```
+Adds a comment to the \<group-name\> local group record
+```
+net localgroup <group-name> /comment:"The executive staff."
+```
+
+
+### Net Session Syntax:
+Display a list of session information for the local server
+```
+net session
+```
+Display session information for a client with the computer name bweston
+```
+net session \\bweston
+```
+To end all sessions between the server and the clients connected to it
+```
+net session /delete
+```
+
+
+### Net Share Syntax:
+```
+net share <ShareName>
+net share <ShareName>=<drive>:<DirectoryPath> [/grant:<user>,{read | change |full}] [/users:<number> | /unlimited] [/remark:<text>] [/cache:{manual | documents | programs | BranchCache |none} ]
+net share [/users:<number> | /unlimited] [/remark:<text>] [/cache:{manual | documents | programs | BranchCache |none} ]
+net share {<ShareName> | <DeviceName> | <drive>:<DirectoryPath>} /delete
+net share <ShareName> \\<ComputerName> /delete
+```
+Display information about shared resources on the local computer, type:
+```
+net share       
+```
+Share a computer's C:\Data directory with the share name DataShare and include a remark, type:
+```
+net share DataShare=c:\Data /remark:"For department 123."       
+```
+Stop sharing the DataShare folder you created in the previous example, type:
+```
+net share DataShare /delete       
+```
+Share a computer's C:\Art List directory with the share name List, type:
+```
+net share list="c:\Art List"    
+```
+
 
 ### netstat -ano
 ```
@@ -559,6 +734,29 @@ instead of "netsh firewall", see KB article 947709
 at https://go.microsoft.com/fwlink/?linkid=121488 .
 ```
 
+# Powershell:
+## Get Firewall Rules
+```
+Get-NetFirewallRule -all | Out-GridView		
+Get-NetFirewallRule -all | Export-csv <file_path.csv>	
+```
+
+## Add Firewall Rule
+```
+New-NetFirewallRule -Action Allow -DisplayName Pentester-C2 -RemoteAddress <ip-address>		
+```
+
+## Find Juicy Stuff:
+#### search folder path\to\directory for files that contain the "STRING"
+```
+ls -r c:\path\to\directory -file | % {Select-String -path $_ -pattern STRING}	
+```
+
+## Running Services: 
+```
+get-process
+```
+
 ## Older Windows versions will use:
 ```
 netsh advfirewall firewall dump 
@@ -640,4 +838,16 @@ Repeat: Stop If Still Running:        Disabled
 Keep in mind you can of course change the name SYSTEM to another privileged user.
 ```
 cat schtask.txt | grep "SYSTEM\|Task To Run" | grep -B 1 SYSTEM
+```
+
+
+# PowerShell Commands:
+## ping sweeper:
+```
+1..255 | % {echo "10.10.10.$_"; ping -n 1 -w 100 10.10.10.$_ | Select-String ttl}	# PowerShell
+```
+
+## Port Scanner:
+```
+1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("<ip-address>",$_)) "Port $_ is open!"} 2>$null	# PowerShell
 ```
