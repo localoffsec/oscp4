@@ -161,14 +161,14 @@ ls -r *.txt | Select-String -Pattern "password" -ErrorAction SilentlyContinue
 ```
 
 
-# Powershell Wifi Password Greb
+# Powershell Wifi Passwords 
 ## Grab all wifi passwords and format the output to be easy to read:
 ```
 (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | % {(netsh wlan show profile name="$name" key=clear)} | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ SSID=$name;PASSWORD=$pass }} | Format-Table -AutoSize
 ```
 
 
-# WiFi Passwords
+# CMD WiFi Passwords
 ## Grab all wifi passwords and format the output to be easy to read:
 ```
 cls & echo. & for /f "tokens=4 delims=: " %a in ('netsh wlan show profiles ^| find "Profile "') do @echo off > nul & (netsh wlan show profiles name=%a key=clear | findstr "SSID Cipher Content" | find /v "Number" & echo.) & @echo on
