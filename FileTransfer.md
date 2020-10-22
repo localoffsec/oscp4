@@ -27,7 +27,7 @@ python3 -m http.server 8000
 ## Check:
 browse to localhost:8000
 ## From Victim Machine:
-browse to <Attacker-IP>:8000
+browse to \<Attacker-IP\>:8000
 
 # 'my_server.py':
 ```
