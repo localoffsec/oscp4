@@ -105,21 +105,9 @@ https://github.com/jeroennijhof/vncpwd
 
 
 
-Read More: https://www.raymond.cc/blog/crack-or-decrypt-vnc-server-encrypted-password/
+http://aluigi.org/pwdrec/vncpwd.zip
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-Read More: https://www.raymond.cc/blog/crack-or-decrypt-vnc-server-encrypted-password/
-
-
+http://tools88.com/safe/vnc.php
