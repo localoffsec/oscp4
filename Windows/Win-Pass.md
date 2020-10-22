@@ -29,6 +29,11 @@ Get-Childitem –Path C:\ -Include unattended.xml -Recurse -ErrorAction Silently
 1. c:\sysprep.inf			    [Clear Text Password]
 2. c:\sysprep\sysprep.xml		[Base64 Encoded Password]
 
+### Decode BASE64 in Linux
+```
+echo "<BASE64-Encoded_Password>" | base64 -d 
+```
+
 ## clear text Passwords
 ```
 findstr /si password *.txt *.ini *.config *.xml
