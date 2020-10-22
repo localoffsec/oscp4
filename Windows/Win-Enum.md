@@ -844,10 +844,10 @@ cat schtask.txt | grep "SYSTEM\|Task To Run" | grep -B 1 SYSTEM
 # PowerShell Commands:
 ## ping sweeper:
 ```
-1..255 | % {echo "10.10.10.$_"; ping -n 1 -w 100 10.10.10.$_ | Select-String ttl}	# PowerShell
+1..255 | % {echo "10.10.10.$_"; ping -n 1 -w 100 10.10.10.$_ | Select-String ttl}	
 ```
 
 ## Port Scanner:
 ```
-1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("<ip-address>",$_)) "Port $_ is open!"} 2>$null	# PowerShell
+1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("<ip-address>",$_)) "Port $_ is open!"} 2>$null	
 ```
