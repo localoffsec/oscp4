@@ -42,18 +42,13 @@ find /home -exec sh -i \;
 4. :set shell=/bin/bash:shell
 5. :!bash
 
+
 ## use pagers less, more, or programs like man that use less or more by default
+
 1. !/bin/sh, !/bin/zsh, try other shells!?!?
 2. !/bin/bash
 3. !bash
 
-
-## use pagers less, more, or programs like man that use less or more by default
-```
-1. !/bin/sh, !/bin/zsh, try other shells!?!?
-2. !/bin/bash
-3. !bash
-```
 
 ## use awk command
 ```
