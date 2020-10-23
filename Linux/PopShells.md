@@ -125,6 +125,10 @@ perl —e 'exec "/bin/sh";'
 ```
 exec "/bin/sh"
 ```
+```
+ruby -e 'exec "/bin/sh"'
+```
+
 ## IRB:
 ```
 exec "/bin/sh"
