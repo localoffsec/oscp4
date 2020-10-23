@@ -9,11 +9,6 @@ This is where I will be keeping all my references, notes, and code that I plan t
 4. Metasploit Emergency Use (in case I am running out of time and need some more points)
 5. ZeroLogon Exploit (just in case)
 
-## Currently contains: 
-1. Buffer Overflow Notes
-2. Linux Commands and Privilege Escalation
-3. Windows Commands and Privilege Escalation
-
 ## Tools I plan to use:
 1. GitHub Repo (this one)
 2. GoBuster — https://github.com/OJ/gobuster
