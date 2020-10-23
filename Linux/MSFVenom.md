@@ -24,6 +24,11 @@ Run
 msfvenom -l
 ```
 
+## search for cmd/unix payloads
+```
+msfvenom -l payloads | grep "cmd/unix" | awk '{print $1}'
+```
+
 ## look at payload options:
 ```
 msfvenom --payload-options -p windows/shell/reverse_tcp
