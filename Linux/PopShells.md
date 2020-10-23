@@ -35,20 +35,20 @@ find / -perm /6001
 find /home -exec sh -i \;
 ```
 ## use text editors vim, vi, nano, pico, ed
-
-1. :!/bin/sh, !/bin/zsh, try other shells!?!?
-2. :shell
-3. :set shell=/bin/sh
-4. :set shell=/bin/bash:shell
-5. :!bash
-
+```
+:!/bin/sh, !/bin/zsh, try other shells!?!?
+:shell
+:set shell=/bin/sh
+:set shell=/bin/bash:shell
+:!bash
+```
 
 ## use pagers less, more, or programs like man that use less or more by default
-
-1. !/bin/sh, !/bin/zsh, try other shells!?!?
-2. !/bin/bash
-3. !bash
-
+```
+!/bin/sh, !/bin/zsh, try other shells!?!?
+!/bin/bash
+!bash
+```
 
 ## use awk command
 ```
