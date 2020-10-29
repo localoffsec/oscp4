@@ -1,4 +1,11 @@
 # Winodws Enumeration
+
+## side note:
+Execution Policy Bypass
+```
+powershell -ep bypass
+```
+
 ## On the machine:
 ### systeminfo
 ```
