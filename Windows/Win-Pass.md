@@ -1,3 +1,9 @@
+## side note:
+Execution Policy Bypass
+```
+powershell -ep bypass
+```
+
 # Find proof.txt or local.txt
 ```
 cd c:\Users\administrator\Desktop
