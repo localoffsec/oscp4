@@ -16,6 +16,16 @@ msf exploit(multi/handler) > set LPORT <Listening_Port> (for example set LPORT 4
 msf exploit(multi/handler) > run
 ```
 
+# Built-in Exploit Suggester
+```
+meterpreter > run post/multi/recon/local_exploit_suggester
+```
+
+# Load Powershell
+```
+meterpreter > load powershell
+```
+
 
 # Meterpreter: Help
 
