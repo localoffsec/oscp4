@@ -20,7 +20,7 @@ so if you run this from the home folder, then you'd open a browser and go to the
 -m is for module
 ## Python 2
 ``` 
-pyhton -m SimpleHTTPServer 8080
+python -m SimpleHTTPServer 8080
 ```
 ## Python 3
 ```
