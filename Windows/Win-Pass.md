@@ -139,8 +139,10 @@ Same command but saves the output to the clipboard for easy pasting.
 reg query HKLM /f password /t REG_SZ /s | clip 
 reg query HKCU /f password /t REG_SZ /s | clip 
 ```
-
-
+To further investigate:
+```
+reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
+```
 
 
 ## Powershell:
