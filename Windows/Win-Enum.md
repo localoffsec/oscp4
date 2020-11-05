@@ -1,9 +1,13 @@
 # Winodws Enumeration
 
-## side note:
+## Powershell side note:
 Execution Policy Bypass
 ```
 powershell -ep bypass
+```
+## CMD read dll side note:
+ ```
+ regsvr32 filename. dll
 ```
 
 ## On the machine:
