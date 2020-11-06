@@ -3,7 +3,7 @@
 ### 1. Install Kali Linux https://www.kali.org/downloads/
 ### 2. Update Kali: 
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn
+sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git
 ```
 ### 3. Install pip for Python2: 
 ```
