@@ -11,7 +11,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 ```
 ### 4. Install Feroxbuster https://github.com/epi052/feroxbuster
-### 5. Autosave all commands to History forever
+### 5. Autosave all commands to History forever with a timestamp
 ```
 http://jesrui.sdf-eu.org/remember-all-your-bash-history-forever.html
 Append the following lines to /etc/bash.bashrc:
