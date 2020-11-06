@@ -10,7 +10,27 @@ python get-pip.py
 ```
 4. Install Feroxbuster https://github.com/epi052/feroxbuster
 5. Setup History w/ timestamp and autosave across all reminals
-6. clone this repo ```git clone https://github.com/ciwen3/OSCP.git```
+```
+http://jesrui.sdf-eu.org/remember-all-your-bash-history-forever.html
+Append the following lines to /etc/bash.bashrc:
+
+HISTTIMEFORMAT='%F %T '
+HISTFILESIZE=-1
+HISTSIZE=-1
+HISTCONTROL=ignoredups
+HISTIGNORE=?:??
+
+# append to history, don't overwrite it
+shopt -s histappend                 
+# attempt to save all lines of a multiple-line command in the same history entry
+shopt -s cmdhist
+# save multi-line commands to the history with embedded newlines
+shopt -s lithist
+```
+6. clone this repo 
+```
+git clone https://github.com/ciwen3/OSCP.git
+```
 7. 
 
 
