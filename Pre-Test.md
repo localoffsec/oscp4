@@ -9,7 +9,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 ```
 4. Install Feroxbuster https://github.com/epi052/feroxbuster
-5. Setup History w/ timestamp and autosave across all reminals
+5. Autosave all commands to History forever
 ```
 http://jesrui.sdf-eu.org/remember-all-your-bash-history-forever.html
 Append the following lines to /etc/bash.bashrc:
@@ -27,11 +27,23 @@ shopt -s cmdhist
 # save multi-line commands to the history with embedded newlines
 shopt -s lithist
 ```
-6. clone this repo 
+6. Timestamp in Terminal
+```
+Add Timestamp to Bash:
+======================
+# taken from https://www.contextis.com/en/blog/logging-like-a-lumberjack
+cp ~/.bashrc ~/.bashrc.back
+nano ~./bashrc
+# find the line(s) with PS1= and 
+# add the following inside the ' '
+[`date +"%d-%b-%Y %T"`] > 
+# [21-Feb-2020 10:57:20] > 
+```
+7. clone this repo 
 ```
 git clone https://github.com/ciwen3/OSCP.git
 ```
-7. 
+8. 
 
 
 
