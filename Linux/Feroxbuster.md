@@ -36,14 +36,10 @@ OPTIONS:
 ```
 
 ## Multiple Values
-
 The command above adds .pdf, .js, .html, .php, .txt, .json, and .docx to each url
-
 ```
 ./feroxbuster -u http://127.1 -x pdf -x js,html -x php txt json,docx
 ```
-
-
 
 ## Extract Links from Response Body
 Search through the body of valid responses (html, javascript, etc...) for additional endpoints to scan.
@@ -52,8 +48,10 @@ Search through the body of valid responses (html, javascript, etc...) for additi
 
 ```
 
-
-
+## Grab it all 
+```
+feroxbuster -u http://10.129.35.132/login.php --extract-links -x js php ini inf jsp htm html json pdf txt xlsx docx 
+```
 
 
 
