@@ -12,9 +12,9 @@ python get-pip.py
 ```
 ### 4. Install Feroxbuster https://github.com/epi052/feroxbuster
 ### 5. Autosave all commands to History forever with a timestamp
+taken from: http://jesrui.sdf-eu.org/remember-all-your-bash-history-forever.html
 ```
-http://jesrui.sdf-eu.org/remember-all-your-bash-history-forever.html
-Append the following lines to /etc/bash.bashrc:
+# Append the following lines to /etc/bash.bashrc:
 
 HISTTIMEFORMAT='%F %T '
 HISTFILESIZE=-1
@@ -30,10 +30,8 @@ shopt -s cmdhist
 shopt -s lithist
 ```
 ### 6. Timestamp in Terminal
+taken from: https://www.contextis.com/en/blog/logging-like-a-lumberjack
 ```
-Add Timestamp to Bash:
-======================
-# taken from https://www.contextis.com/en/blog/logging-like-a-lumberjack
 cp ~/.bashrc ~/.bashrc.back
 nano ~./bashrc
 # find the line(s) with PS1= and 
