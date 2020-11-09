@@ -10,7 +10,7 @@ This is where I will be keeping all my references, notes, and code that I plan t
 5. ZeroLogon Exploit (just in case)
 
 ## Tools I plan to use:
-1. GitHub Repo (this one)
+1. GitHub Repo (this one) — https://github.com/ciwen3/OSCP.git
 2. MSFVenom Payload Creator — https://github.com/g0tmi1k/msfpc
 3. Exploit-DB — https://www.exploit-db.com/
 4. SearchSploit — https://www.exploit-db.com/searchsploit
