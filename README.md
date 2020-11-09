@@ -23,13 +23,14 @@ searchsploit afd windows local
    Note, SearchSploit uses an AND operator, not an OR operator. The more terms that are used, the more results will be filtered out.
    Pro Tip: Do not use abbreviations (use SQL Injection, not SQLi).
    Pro Tip: If you are not receiving the expected results, try searching more broadly by using more general terms (use Kernel 2.6 or Kernel 2.x, not Kernel 2.6.25).
+
 5. Windows Kernel Exploits — https://github.com/SecWiki/windows-kernel-exploits
-5. Linux Kernel Exploits — https://github.com/lucyoa/kernel-exploits
-6. Hashcat — https://hashcat.net/hashcat/
-7. John the Ripper — https://www.openwall.com/john/
-8. pattern_create.rb — /usr/share/metasploit-framework/tools/exploit/pattern_create.rb
-9. pattern_offset.rb — /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb
-10. Kali's builtin Windows Resources:
+6. Linux Kernel Exploits — https://github.com/lucyoa/kernel-exploits
+7. Hashcat — https://hashcat.net/hashcat/
+8. John the Ripper — https://www.openwall.com/john/
+9. pattern_create.rb — /usr/share/metasploit-framework/tools/exploit/pattern_create.rb
+10. pattern_offset.rb — /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb
+11. Kali's builtin Windows Resources:
   ```
   /usr/share/windows-resources/
   /usr/share/windows-resources/binaries/
