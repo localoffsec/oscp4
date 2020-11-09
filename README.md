@@ -24,6 +24,7 @@ This is where I will be keeping all my references, notes, and code that I plan t
 12. pattern_create.rb
 13. pattern_offset.rb
 14. Feroxbuster — https://github.com/epi052/feroxbuster
+15. Rustbuster — https://github.com/phra/rustbuster
 
 # Exam Guide:
 https://help.offensive-security.com/hc/en-us/articles/360040165632-OSCP-Exam-Guide
