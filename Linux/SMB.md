@@ -27,9 +27,10 @@ nmap -sU -sS --script=smb-enum-users -p U:137,T:139 192.168.11.200-254
 python /usr/share/doc/python-impacket-doc/examples/samrdump.py 192.168.XXX.XXX
 ```
 ## RID cycle SMB / enumerate users from SMB
-``
+```
 ridenum.py 192.168.XXX.XXX 500 50000 dict.txt
 ```
+
 ## Enmerate users from SNMP
 ```				
 snmpwalk public -v1 192.168.X.XXX 1 |grep 77.1.2.25 |cut -d” “ -f4
