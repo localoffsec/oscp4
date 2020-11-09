@@ -11,20 +11,27 @@ This is where I will be keeping all my references, notes, and code that I plan t
 
 ## Tools I plan to use:
 1. GitHub Repo (this one)
-2. GoBuster — https://github.com/OJ/gobuster
-3. Recursive GoBuster — https://github.com/epi052/recursive-gobuster
-4. Nikto — https://github.com/sullo/nikto
-5. dirb — https://tools.kali.org/web-applications/dirb
-6. MSFVenom Payload Creator — https://github.com/g0tmi1k/msfpc
-7. Exploit-DB — https://www.exploit-db.com/
-8. Windows Kernel Exploits — https://github.com/SecWiki/windows-kernel-exploits
-9. Linux Kernel Exploits — https://github.com/lucyoa/kernel-exploits
-10. Hashcat — https://hashcat.net/hashcat/
-11. John the Ripper — https://www.openwall.com/john/
-12. pattern_create.rb
-13. pattern_offset.rb
-14. Feroxbuster — https://github.com/epi052/feroxbuster
-15. Rustbuster — https://github.com/phra/rustbuster
+2. MSFVenom Payload Creator — https://github.com/g0tmi1k/msfpc
+3. Exploit-DB — https://www.exploit-db.com/
+4. Windows Kernel Exploits — https://github.com/SecWiki/windows-kernel-exploits
+5. Linux Kernel Exploits — https://github.com/lucyoa/kernel-exploits
+6. Hashcat — https://hashcat.net/hashcat/
+7. John the Ripper — https://www.openwall.com/john/
+8. pattern_create.rb
+9. pattern_offset.rb
+10. Kali builtin Windows Resources:
+```
+/usr/share/windows-resources/
+/usr/share/windows-resources/binaries/
+```
+
+## Content Discovery Tools
+1. GoBuster — https://github.com/OJ/gobuster
+2. Recursive GoBuster — https://github.com/epi052/recursive-gobuster
+3. Nikto — https://github.com/sullo/nikto
+4. dirb — https://tools.kali.org/web-applications/dirb
+5. Feroxbuster — https://github.com/epi052/feroxbuster
+6. Rustbuster — https://github.com/phra/rustbuster
 
 # Exam Guide:
 https://help.offensive-security.com/hc/en-us/articles/360040165632-OSCP-Exam-Guide
