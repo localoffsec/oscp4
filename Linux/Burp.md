@@ -39,7 +39,8 @@ start looking at the output and check:
 1. response window at the bottom to see what happened
 2. different length replies for different results
 3. status codes
-4. 
+
+
 
 
 
