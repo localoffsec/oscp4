@@ -1,3 +1,7 @@
+Side note: 
+check for /bin/dash
+very similar to bash without some security features
+
 # Search for Commands that run as Root:
 ## list all programs this account has sudo access to
 ```
