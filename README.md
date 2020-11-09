@@ -17,13 +17,13 @@ This is where I will be keeping all my references, notes, and code that I plan t
 5. Linux Kernel Exploits — https://github.com/lucyoa/kernel-exploits
 6. Hashcat — https://hashcat.net/hashcat/
 7. John the Ripper — https://www.openwall.com/john/
-8. pattern_create.rb
-9. pattern_offset.rb
+8. pattern_create.rb — /usr/share/metasploit-framework/tools/exploit/pattern_create.rb
+9. pattern_offset.rb — /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb
 10. Kali builtin Windows Resources:
-```
-/usr/share/windows-resources/
-/usr/share/windows-resources/binaries/
-```
+  ```
+  /usr/share/windows-resources/
+  /usr/share/windows-resources/binaries/
+  ```
 
 ## Content Discovery Tools
 1. GoBuster — https://github.com/OJ/gobuster
