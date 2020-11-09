@@ -19,8 +19,9 @@ in firefox with foxy proxy on browse to the site you want to attack. insert info
 in Burp, proxy should show the raw page information. select action > send to intruder
 
 ### Intruder 
-#### positions:
+#### Positions:
 clear all on the right
+
 select the fields you want to attack (ie. username, password, etc.) and hit add button for each
 
 #### Attack Type:
