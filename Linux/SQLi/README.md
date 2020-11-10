@@ -68,5 +68,8 @@ The SQL above is valid and will return all rows from the "Users" table, since OR
 ```
 ' or 1=1--
 ' and 1=1--
+' or 1=1;--
+' and 1=1;--
+'OR 1 OR'
 105 OR 1=1
 ```
