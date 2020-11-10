@@ -90,6 +90,7 @@ cat /etc/shadow
 
 # User History
 ```
+history
 cat ~/.bash_history
 cat ~/.nano_history
 cat ~/.atftp_history
@@ -102,8 +103,6 @@ cat ~/.php_history
 uname -a
 lsb_release -a
 env
-whoami
-history
 ```
 
 # Network configuration 
