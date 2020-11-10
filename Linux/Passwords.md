@@ -20,11 +20,11 @@ $6 = SHA-512 		86 characters
 # Cryptography
 ### Hash Lengths
 ```
-HASH			SIZE
-MD5 Hash Length	16 Bytes
-SHA-1 Hash Length	20 Bytes
-SHA-256 Hash Length	32 Bytes
-SHA-512 Hash Length	64 Bytes
+HASH			SIZE/LENGTH
+MD5 Hash 		16 Bytes
+SHA-1 Hash 		20 Bytes
+SHA-256 Hash 		32 Bytes
+SHA-512 Hash 		64 Bytes
 ```
 
 ### Hash Examples
