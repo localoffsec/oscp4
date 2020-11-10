@@ -47,7 +47,7 @@ show tables;
 describe <table>;
 ```
 
-### Selects all records from <table>.
+### Selects all records from \<table\>.
 ```
 select * from <table>;
 ```
