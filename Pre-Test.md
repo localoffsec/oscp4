@@ -68,9 +68,9 @@ git clone https://github.com/ciwen3/OSCP.git
 
 # OSCP Start Checklist:
 1. start Automatic Screenshots (saving to github folder)
--[ ] Host
--[ ] VirtualBox
--[ ] VM
+- [ ] Host
+- [ ] VirtualBox
+- [ ] VM
 2. start script to auto upload my notes and screenshoots to private github account
 3. connect VPN
 4. Login to website
