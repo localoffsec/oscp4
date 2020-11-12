@@ -1,7 +1,9 @@
-responder – NBT-NS/LLMNR Responder
-==================================
+# Responder 
+## NBT-NS/LLMNR Responder
+
 This tool is first an LLMNR and NBT-NS responder, it will answer to *specific* NBT-NS (NetBIOS Name Service) queries based on their name suffix (see: http://support.microsoft.com/kb/163409). By default, the tool will only answers to File Server Service request, which is for SMB. The concept behind this, is to target our answers, and be stealthier on the network. This also helps to ensure that we don’t break legitimate NBT-NS behavior. You can set the -r option to 1 via command line if you want this tool to answer to the Workstation Service request name suffix.
 
+```
 root@kali:~# responder -h
 Usage: python /usr/bin/responder -i 10.20.30.40 -b On -r On
 
@@ -39,6 +41,10 @@ value is Off
 responder Usage Example
 
 Specify the IP address to redirect to (-i 192.168.1.202), enabling the WPAD rogue proxy (-w On), answers for netbios wredir (-r On), and fingerprinting (-f On):
+```
+
+## Usage Example
+```
 root@kali:~# responder -i 192.168.1.202 -w On -r On -f On
 NBT Name Service/LLMNR Responder 2.0.
 Please send bugs/comments to: lgaffie@trustwave.com
@@ -65,3 +71,4 @@ LDAP Server is:ON
 FingerPrint Module is:ON
 Serving Executable via HTTP&amp;WPAD is:OFF
 Always Serving a Specific File via HTTP&amp;WPAD is:OFF
+```

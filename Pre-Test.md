@@ -1,4 +1,4 @@
-# Setup
+# Setup Kali
 
 ### 1. Install Kali Linux https://www.kali.org/downloads/
 ### 2. Update Kali: 
@@ -47,8 +47,28 @@ git clone https://github.com/ciwen3/OSCP.git
 
 
 
+# Setup Windows 10 
+## Settings:
+1. Antivirus turned off
+2. firewall turned off
+
+## Software:
+1. Immunity Debugger
+2. moana.py
+3. gitbash
+4. firefox
+5. Burp Community edition
+6. Java 
+7. OWASP ZAP
+8. 
+
+
+
+
 ## Not sure about:
 ### 1. Install OBS studio? use virtualbox screen capture? 1 fps for backup screen shots
-### 2. script to automatically save my hacking info to private github repo (not this one). 
+### 2. git hub to save notes and screenshots 	
+	Automate a script to upload the info every 5 min if github is pingable. 
+	Automate screenshots every min (What is the max file size for uploading to github?). should save info to github notes for OSCP. 
 ### 3. 
 
