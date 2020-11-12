@@ -14,6 +14,8 @@ sleep 300
 git add -A
 git commit -m update
 git push origin main
+# for older Github accounts use below:
+# git push origin master 
 ```
 Make script executable
 ```
