@@ -57,10 +57,11 @@ git clone https://github.com/ciwen3/OSCP.git
 2. moana.py
 3. gitbash
 4. firefox
-5. Burp Community edition
-6. Java 
-7. OWASP ZAP
-8. 
+5. Foxy Proxy
+6. Burp Community edition
+7. Java 
+8. OWASP ZAP
+9. 
 
 
 
