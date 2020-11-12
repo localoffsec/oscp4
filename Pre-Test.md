@@ -63,7 +63,8 @@ git clone https://github.com/ciwen3/OSCP.git
 8. OWASP ZAP
 9. 
 
-
+# Checklists:
+https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
 
 
 ## Not sure about:
