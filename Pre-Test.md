@@ -61,10 +61,19 @@ git clone https://github.com/ciwen3/OSCP.git
 6. Burp Community edition
 7. Java 
 8. OWASP ZAP
-9. 
 
-# Checklists:
-https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
+## Attack Checklist:
+1. https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
+
+
+# OSCP Start Checklist:
+1. start Automatic Screenshots (saving to github folder)
+-[ ] Host
+-[ ] VirtualBox
+-[ ] VM
+2. start script to auto upload my notes and screenshoots to private github account
+3. connect VPN
+4. Login to website
 
 
 ## Not sure about:
