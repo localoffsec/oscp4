@@ -15,6 +15,7 @@ git add -A
 git commit -m update
 git push origin main
 ```
+Make script executable
 ```
 chmod +x OSCP-git.sh
 ```
@@ -36,6 +37,7 @@ expect "Password for 'https://<username>@github.com':"
 send -- "<password>\n"
 expect eof
 ```
+Make script executable
 ```
 chmod +x OSCP-expect.sh
 ```
