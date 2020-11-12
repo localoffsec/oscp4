@@ -1,4 +1,4 @@
-# Automatically upload notes and screenshots to private github repo
+# Automatically upload notes and screenshots
 
 ## create OSCP-git.sh
 ```
