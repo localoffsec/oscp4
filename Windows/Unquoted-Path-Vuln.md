@@ -3,7 +3,7 @@
 
 make a copy of a standalone putty and rename as C:\program.exe and c:\program files\common.exe
 
-When putty randomly pops up open up CMD as administrator. 
+When putty randomly pops up, open up CMD as **administrator**. 
 
 ## Run the following:
 ```
