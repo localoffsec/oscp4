@@ -15,6 +15,9 @@ git add -A
 git commit -m update
 git push origin main
 ```
+```
+chmod +x OSCP-git.sh
+```
 
 ## create OSCP-expect.sh
 ```
@@ -32,6 +35,9 @@ send -- "<username>\n"
 expect "Password for 'https://<username>@github.com':"
 send -- "<password>\n"
 expect eof
+```
+```
+chmod +x OSCP-expect.sh
 ```
 
 ## from terminal run 
