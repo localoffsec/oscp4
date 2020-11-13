@@ -102,6 +102,7 @@ cat ~/.php_history
 ```
 uname -a
 lsb_release -a
+cat /etc/os-release
 env
 ```
 
