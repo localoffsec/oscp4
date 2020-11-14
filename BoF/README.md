@@ -7,7 +7,6 @@ All python code here is written in python 2 because that is what comes with kali
 2. Fuzzing- send a bunch of characters at a program and see if we can break it.
 3. Finding the offset- Find the point fuzzing broke the program.
 4. Overwrite the EIP Register- using the offset found in the previous step.
-## Clean up: 
 5. Finding Bad Characters- so that our exploit doesn’t do something unexpected. 
 6. Finding the Right Module- looking for a module with no memory protection to abuse. 
 7. Generating the shell code- use MSFVenom to generate the shellcode
