@@ -74,12 +74,14 @@ git clone https://github.com/ciwen3/OSCP.git
 	- [ ] VirtualBox: VM settings > Display > Recording > Enable Recording, Frame Size: 1024x768 (4:3), Frame Rate: 1 fps, Video Quality: high
 	- [ ] Windows VM: snipping tool
 	- [ ] Kali VM: 
+	```
 	PrtSc – Save a screenshot of the entire screen to the “Pictures” directory.
 	Shift + PrtSc – Save a screenshot of a specific region to Pictures.
 	Alt + PrtSc  – Save a screenshot of the current window to Pictures.
 	Ctrl + PrtSc – Copy the screenshot of the entire screen to the clipboard.
 	Shift + Ctrl + PrtSc – Copy the screenshot of a specific region to the clipboard.
 	Ctrl + Alt + PrtSc – Copy the screenshot of the current window to the clipboard.
+	```
 2. start script to auto upload my notes and screenshoots to private github account
 3. connect OSCP VPN
 4. Login to OSCP website
