@@ -70,9 +70,16 @@ git clone https://github.com/ciwen3/OSCP.git
 
 # OSCP Start Checklist:
 1. start Automatic Screenshots (saving to github folder)
-	- [ ] Host: 
+	- [ ] Host: WinKey + G, snipping tool
 	- [ ] VirtualBox: VM settings > Display > Recording > Enable Recording, Frame Size: 1024x768 (4:3), Frame Rate: 1 fps, Video Quality: high
-	- [ ] VM: 
+	- [ ] Windows VM: snipping tool
+	- [ ] Kali VM: 
+	PrtSc – Save a screenshot of the entire screen to the “Pictures” directory.
+	Shift + PrtSc – Save a screenshot of a specific region to Pictures.
+	Alt + PrtSc  – Save a screenshot of the current window to Pictures.
+	Ctrl + PrtSc – Copy the screenshot of the entire screen to the clipboard.
+	Shift + Ctrl + PrtSc – Copy the screenshot of a specific region to the clipboard.
+	Ctrl + Alt + PrtSc – Copy the screenshot of the current window to the clipboard.
 2. start script to auto upload my notes and screenshoots to private github account
 3. connect OSCP VPN
 4. Login to OSCP website
@@ -81,7 +88,6 @@ git clone https://github.com/ciwen3/OSCP.git
 Automate a script to upload the info every 5 min if github is pingable.
 
 ## Not sure about:
-### 1. Install OBS studio? use virtualbox screen capture? 1 fps for backup screen shots
-### 2. git hub to save notes and screenshots 	
-	Automate a script to upload the info every 5 min if github is pingable. 
-	Automate screenshots every min (What is the max file size for uploading to github?). should save info to github notes for OSCP. 
+### 1. Install OBS studio?? gnome-screenshot?? imagemagick??
+### 2. cherrytree
+### 3. 
