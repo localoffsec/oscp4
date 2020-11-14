@@ -34,7 +34,7 @@ shopt -s cmdhist
 shopt -s lithist
 ```
 
-### 6. Timestamp in Terminal
+### 6. Timestamp in Terminal (for screenshots)
 taken from: https://www.contextis.com/en/blog/logging-like-a-lumberjack
 ```
 cp ~/.bashrc ~/.bashrc.back
