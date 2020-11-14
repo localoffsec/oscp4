@@ -62,7 +62,7 @@ git clone https://github.com/ciwen3/OSCP.git
 4. Firefox - https://www.mozilla.org/en-US/firefox/new/
 5. Foxy Proxy - https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
 6. Burp Community edition - https://portswigger.net/burp/communitydownload
-7. Java - 
+7. Java - https://www.java.com/en/download/manual.jsp
 8. OWASP ZAP - https://www.zaproxy.org/
 
 ## Attack Checklist:
