@@ -50,6 +50,8 @@ nano ~./bashrc
 git clone https://github.com/ciwen3/OSCP.git
 ```
 
+### 8. Install Impacket - pip install impacket (https://github.com/SecureAuthCorp/impacket)
+
 # Setup Windows 10 
 ## Settings:
 1. Antivirus turned off
