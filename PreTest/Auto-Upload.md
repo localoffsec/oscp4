@@ -4,6 +4,7 @@
 ```
 nano OSCP-git.sh
 ```
+Copy and paste the text below into nano
 ```
 #!/bin/bash
 # upload all notes and screen shots to github every 5 min
@@ -26,6 +27,9 @@ chmod +x OSCP-git.sh
 ```
 nano OSCP-expect.sh
 ```
+Copy and paste the text below into nano, change the username and password to the appropriate values.
+
+**For security reasons this should not be kept in a public Github account**
 ```
 #!/usr/bin/expect -f
 
