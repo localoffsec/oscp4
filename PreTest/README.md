@@ -89,7 +89,7 @@ git clone https://github.com/ciwen3/OSCP.git
 4. Login to OSCP website
 
 # TODO:
-Automate a script to upload the info every 5 min if github is pingable.
+1. 
 
 ## Not sure about:
 ### 1. Install OBS studio?? gnome-screenshot?? imagemagick??
