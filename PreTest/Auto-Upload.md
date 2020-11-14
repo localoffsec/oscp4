@@ -29,7 +29,7 @@ nano OSCP-expect.sh
 ```
 Copy and paste the text below into nano, change the username and password to the appropriate values.
 
-**For security reasons this should not be kept in a public Github account**
+**For security reasons this should not be kept in a public Github repo.**
 ```
 #!/usr/bin/expect -f
 
