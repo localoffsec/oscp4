@@ -56,14 +56,14 @@ git clone https://github.com/ciwen3/OSCP.git
 2. firewall turned off
 
 ## Software:
-1. Immunity Debugger
-2. moana.py
-3. gitbash
-4. firefox
-5. Foxy Proxy
-6. Burp Community edition
-7. Java 
-8. OWASP ZAP
+1. Immunity Debugger - https://www.immunityinc.com/products/debugger/index.html
+2. moana.py - https://github.com/corelan/mona
+3. GitBash - https://gitforwindows.org/
+4. Firefox - https://www.mozilla.org/en-US/firefox/new/
+5. Foxy Proxy - 
+6. Burp Community edition - 
+7. Java - 
+8. OWASP ZAP - 
 
 ## Attack Checklist:
 1. https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
