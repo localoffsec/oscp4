@@ -83,6 +83,7 @@ git clone https://github.com/ciwen3/OSCP.git
 	Ctrl + Alt + PrtSc – Copy the screenshot of the current window to the clipboard.
 	```
 2. start script to auto upload my notes and screenshoots to private github account
+	https://github.com/ciwen3/OSCP/blob/master/PreTest/Auto-Upload.md
 3. connect OSCP VPN
 4. Login to OSCP website
 
