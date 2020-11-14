@@ -60,10 +60,10 @@ git clone https://github.com/ciwen3/OSCP.git
 2. moana.py - https://github.com/corelan/mona
 3. GitBash - https://gitforwindows.org/
 4. Firefox - https://www.mozilla.org/en-US/firefox/new/
-5. Foxy Proxy - 
-6. Burp Community edition - 
+5. Foxy Proxy - https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
+6. Burp Community edition - https://portswigger.net/burp/communitydownload
 7. Java - 
-8. OWASP ZAP - 
+8. OWASP ZAP - https://www.zaproxy.org/
 
 ## Attack Checklist:
 1. https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
