@@ -93,5 +93,5 @@ git clone https://github.com/ciwen3/OSCP.git
 
 ## Not sure about:
 ### 1. Install OBS studio?? gnome-screenshot?? imagemagick??
-### 2. cherrytree
+### 2. cherrytree - https://launchpad.net/~giuspen/+archive/ubuntu/ppa/+packages
 ### 3. 
