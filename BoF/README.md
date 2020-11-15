@@ -12,14 +12,16 @@ All python code here is written in python 2 because that is what comes with kali
 7. Generating the shell code- use MSFVenom to generate the shellcode
 
 ## Tools:
-1. Windows 10, for debugging and being attacked. https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise
-2. Immunity Debugger https://www.immunityinc.com/products/debugger/
-3. Vulnerable software: VulnServer (thegreycorner) https://github.com/stephenbradshaw/vulnserver
-4. Kali Linux, for attacking the Vulnerable Software. https://www.kali.org/downloads/
-5. MSFVenom to generate the shellcode. 
-6. mona.py from https://github.com/corelan/mona
-7. Python 2.7 (can be downloaded and installed by Immunity Debugger)
- 
+### Windows:
+	1. Windows 10, for debugging and being attacked. https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise
+	2. Immunity Debugger https://www.immunityinc.com/products/debugger/
+	3. Vulnerable software: VulnServer (thegreycorner) https://github.com/stephenbradshaw/vulnserver
+	4. mona.py from https://github.com/corelan/mona
+	5. Python 2.7 (can be downloaded and installed by Immunity Debugger)
+ ### Linux:
+	1. Kali Linux, for attacking the Vulnerable Software. https://www.kali.org/downloads/
+	2. MSFVenom to generate the shellcode. 
+
 ## Spiking: 
 
 #### Windows 10: 
