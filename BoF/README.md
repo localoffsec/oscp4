@@ -21,7 +21,7 @@ All python code here is written in python 2 because that is what comes with kali
 
 ### Linux:
 1. Kali Linux, for attacking the Vulnerable Software. https://www.kali.org/downloads/
-2. MSFVenom to generate the shellcode. 
+2. MSFVenom to generate the shellcode. (Comes installed in Kali)
 
 ## Spiking: 
 
