@@ -84,7 +84,7 @@ john --format=descrypt --wordlist /usr/share/wordlists/rockyou.txt hash.txt
 john --format=descrypt hash --show
 ```
 
-Generate MD5 password hash:
+## Generate MD5 password hash:
 ```
 python -c "import random,string,crypt;
 randomsalt = ''.join(random.sample(string.ascii_letters,8));
@@ -94,7 +94,7 @@ print crypt.crypt('MySecretPassword', '\$1\$%s\$' % randomsalt)"
 $1$YjOzcqrf$Zqx4sx5CQRuEIFCdOLAJV0
 ```
 
-Generate SHA-256 password hash:
+## Generate SHA-256 password hash:
 ```
 python -c "import random,string,crypt;
 randomsalt = ''.join(random.sample(string.ascii_letters,8));
@@ -104,7 +104,7 @@ print crypt.crypt('MySecretPassword', '\$5\$%s\$' % randomsalt)"
 $5$LgsPuaeR$OCtm.3tpbS/wyOZAIy6dsVNP4x0GyohyGebkIz15e88
 ```
 
-Generate SHA-512 password hash:
+## Generate SHA-512 password hash:
 ```
 python -c "import random,string,crypt;
 randomsalt = ''.join(random.sample(string.ascii_letters,8));
@@ -113,6 +113,14 @@ print crypt.crypt('MySecretPassword', '\$6\$%s\$' % randomsalt)"
 ```
 $6$HMpFTkgb$WqzuqMqYbjWsXFrOtvZPo.1gIkH6HiXJGr4QPv.k26jE.3mE.sdf3dds[...]
 ```
+
+## Generate SHA-512 password hash:
+```
+root@kali:~/# mkpasswd  -m sha-512 -S saltsalt -s 
+Password: pwned123
+$6$saltsalt$HOC6AvLVkxCTYnJ5Tc78.CYF/KdcBDmheMbOGQTqiMUZhdKof7eXjN9/6I3w8smybsEQEaz5Vh8aoGGs71hf20
+```
+
 
 # BASE64 encode/decode:
 BASE64 encode
