@@ -54,6 +54,8 @@ git clone https://github.com/ciwen3/OSCP.git
 
 ### 9. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
 
+### 10. CherryTree Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
+
 # Setup Windows 10 VM
 ## Settings:
 1. Antivirus turned off
