@@ -4,7 +4,7 @@
 
 ### 2. Update Kali: 
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git
+sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot
 ```
 
 ### 3. Install pip for Python2: 
@@ -51,6 +51,8 @@ git clone https://github.com/ciwen3/OSCP.git
 ```
 
 ### 8. Install Impacket - pip install impacket (https://github.com/SecureAuthCorp/impacket)
+
+### 9. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
 
 # Setup Windows 10 
 ## Settings:
