@@ -54,7 +54,7 @@ git clone https://github.com/ciwen3/OSCP.git
 
 ### 9. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
 
-# Setup Windows 10 
+# Setup Windows 10 VM
 ## Settings:
 1. Antivirus turned off
 2. firewall turned off
