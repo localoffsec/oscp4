@@ -11,6 +11,7 @@ smbclient -L <IP>
 smbclient -U <domain>\\<user> -L <IP>
 rpcclient -U "" target
 enum4linux target
+https://highon.coffee/blog/enum4linux-cheat-sheet/
 ```
 
 ## Fingerprint SMB Version
