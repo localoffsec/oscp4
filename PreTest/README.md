@@ -75,7 +75,7 @@ git clone https://github.com/ciwen3/OSCP.git
 	- [ ] Host: WinKey + G, snipping tool
 	- [ ] VirtualBox: VM settings > Display > Recording > Enable Recording, Frame Size: 1024x768 (4:3), Frame Rate: 1 fps, Video Quality: high
 	- [ ] Windows VM: snipping tool
-	- [ ] Kali VM: Flameshot - ```while true; do flameshot full -p ~/Pictures/ ; sleep 60 ;  done```
+	- [ ] Kali VM: Flameshot - ```while true; do flameshot full -p ~/Pictures/ ; sleep 60 ;  done``` **make sure to turn of desktop notifications in the configuration for flameshot so you don't get annoying pop ups every minute!**
 	
 	```
 	PrtSc – Save a screenshot of the entire screen to the “Pictures” directory.
