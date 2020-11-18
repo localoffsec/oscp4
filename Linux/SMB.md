@@ -379,3 +379,11 @@ When you run this on a box running Samba, you get results:
 root@kali:~/pwk/lab/public# ./smbver.sh [IP]
 [IP]: UnixSamba 227a
 ```
+
+# Scripts to try from Impacket
+especially if you have credentials
+```
+wmiexec.py
+smbexec.py
+psexec.py
+```
