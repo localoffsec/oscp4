@@ -382,6 +382,8 @@ root@kali:~/pwk/lab/public# ./smbver.sh [IP]
 
 # Scripts to try from Impacket
 especially if you have credentials
+
+/usr/share/doc/python3-impacket/examples
 ```
 wmiexec.py
 smbexec.py
