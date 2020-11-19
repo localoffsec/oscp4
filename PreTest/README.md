@@ -4,7 +4,7 @@
 
 ### 2. Update Kali: 
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot expect
+sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot expect python3 python3-pip
 ```
 
 ### 3. Install pip for Python2: 
