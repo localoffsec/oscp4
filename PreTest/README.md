@@ -13,9 +13,17 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 ```
 
-### 4. Install Feroxbuster https://github.com/epi052/feroxbuster
+### 4. Install Impacket
+```
+pip install impacket
+git clone https://github.com/SecureAuthCorp/impacket.git
+cd impacket/
+pip3 install .
+```
 
-### 5. Autosave all commands to History forever with a timestamp
+### 5. Install Feroxbuster https://github.com/epi052/feroxbuster
+
+### 6. Autosave all commands to History forever with a timestamp
 taken from: http://jesrui.sdf-eu.org/remember-all-your-bash-history-forever.html
 ```
 # Append the following lines to /etc/bash.bashrc:
@@ -34,7 +42,7 @@ shopt -s cmdhist
 shopt -s lithist
 ```
 
-### 6. Timestamp in Terminal (for screenshots)
+### 7. Timestamp in Terminal (for screenshots)
 taken from: https://www.contextis.com/en/blog/logging-like-a-lumberjack
 ```
 cp ~/.bashrc ~/.bashrc.back
@@ -45,16 +53,16 @@ nano ~./bashrc
 # [21-Feb-2020 10:57:20] > 
 ```
 
-### 7. clone this repo 
+### 8. clone this repo 
 ```
 git clone https://github.com/ciwen3/OSCP.git
 ```
 
-### 8. Install Impacket - pip install impacket (https://github.com/SecureAuthCorp/impacket)
+### 9. Install Impacket - pip install impacket (https://github.com/SecureAuthCorp/impacket)
 
-### 9. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
+### 10. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
 
-### 10. CherryTree Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
+### 11. CherryTree Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
 
 # Setup Windows 10 VM
 ## Settings:
