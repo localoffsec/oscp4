@@ -15,7 +15,7 @@ python get-pip.py
 
 ### 4. Install Impacket
 ```
-pip install impacket
+pip3 install impacket
 git clone https://github.com/SecureAuthCorp/impacket.git
 cd impacket/
 pip3 install .
