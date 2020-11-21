@@ -40,6 +40,13 @@ who
 w
 last
 ```
+
+# shell discovery 
+this will print out what shell you are using. 
+```
+ls -l /proc/$$/exe
+```
+
 # Finger
 ### use finger to see logged in user info
 ```
