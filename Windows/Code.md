@@ -24,3 +24,26 @@ echo %ERRORLEVEL%
 
 
 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char **argv)
+{
+        int status;
+        if(( status = system("kill -9 13043")) != -1){
+                fprintf(stdout, "kill command exit status: %d\n", WEXITSTATUS(status));
+        }
+
+        return 0;
+}
+
+
+
+
+
+
+
+
+
