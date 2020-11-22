@@ -20,6 +20,7 @@ int main () {
 } 
 
 
+echo %ERRORLEVEL%
 
 
 
