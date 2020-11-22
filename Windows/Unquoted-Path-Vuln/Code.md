@@ -1,6 +1,6 @@
 
 
-
+```
 #include <stdio.h>
 #include <string.h>
 
@@ -18,13 +18,13 @@ int main () {
 
    return(0);
 } 
-
-
+```
+```
 echo %ERRORLEVEL%
+```
 
 
-
-
+```
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -38,12 +38,21 @@ int main(int argc, char **argv)
 
         return 0;
 }
+```
 
 
-
-
-
-
-
-
+```
+when the EXE is run it should pop up a CMD and run:
+whoami
+# to see who the program is being run as
+whoami /priv
+# to tell me what priveldges the program is being run with
+wmic process where name="program.exe" get commandline
+# tell me what command was used to call program.exe
+wmic process where name="program.exe" get parentprocessid
+# to tell me the process id of the command that  called program.exe
+wmic process where processid=<id number from previous command> get commandline
+# tell me the location of the program that ran the command
+```   
+   
 
