@@ -44,11 +44,11 @@ int main()
 ```
 
 ## To Compile C++ using Linux to make Program.exe
-Create 32-Bit Executable
+Create 64-Bit Executable
 ```
 x86_64-w64-mingw32-g++ -static-libstdc++ -static-libgcc -o Program.exe Program.cpp
 ```
-Create 64-Bit Executable
+Create 32-Bit Executable
 ```
 i686-w64-mingw32-g++ -static-libstdc++ -static-libgcc -o Program.exe Program.cpp
 ```
