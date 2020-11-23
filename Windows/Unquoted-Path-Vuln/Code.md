@@ -93,8 +93,8 @@ int main()
 ```
 sudo apt-get install mingw-w64 g++ -y
 g++ -c main.c     <== Linux
-i686-w64-mingw32-gcc -static-libstdc++ -static-libgcc -o main32.exe main.cpp       <== Windows 32-bit
-x86_64-w64-mingw32-gcc -static-libstdc++ -static-libgcc -o main64.exe main.cpp     <== Windows 64-bit
+i686-w64-mingw32-g++ -static-libstdc++ -static-libgcc -o main32.exe main.cpp       <== Windows 32-bit
+x86_64-w64-mingw32-g++ -static-libstdc++ -static-libgcc -o main64.exe main.cpp     <== Windows 64-bit
 ```
 
 
