@@ -65,11 +65,37 @@ x86_64-w64-mingw32-gcc -o main64.exe main.c     <== Windows 64-bit
 ```
    
 
-
 # C++
+## Program.exe
+```
+  GNU nano 5.3                                program.cpp                                         
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // declaring variables:
+    int rvalue; 
+
+    // run commands:
+    system("whoami");
+    system("whoami /priv");
+    system("wmic process where name='program.exe' get commandline");
+    system("wmic process where name='program.exe' get parentprocessid");
+    rvalue = system("wmic process where name='program.exe' get parentprocessid");
+    cout << "The Process ID is: " << rvalue;
+    // system("wmic process where processid " rvalue "  get commandline");
+    return 0;
+}
+```
+
+## Compile
 ```
 sudo apt-get install mingw-w64 g++ -y
 g++ -c main.c     <== Linux
 i686-w64-mingw32-gcc -static-libstdc++ -static-libgcc -o main32.exe main.cpp       <== Windows 32-bit
 x86_64-w64-mingw32-gcc -static-libstdc++ -static-libgcc -o main64.exe main.cpp     <== Windows 64-bit
 ```
+
+
+
