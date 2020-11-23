@@ -60,6 +60,6 @@ wmic process where processid=<id number from previous command> get commandline
 ```
 sudo apt-get install mingw-w64 gcc -y
 gcc -c main.c     <== Linux
-i686-w64-mingw32-gcc -o main32.exe main.c       <== Windows 32-bit
-x86_64-w64-mingw32-gcc -o main64.exe main.c     <== Windows 64-bit
+i686-w64-mingw32-gcc -static-libstdc++ -static-libgcc -o main32.exe main.c       <== Windows 32-bit
+x86_64-w64-mingw32-gcc -static-libstdc++ -static-libgcc -o main64.exe main.c     <== Windows 64-bit
 ```
