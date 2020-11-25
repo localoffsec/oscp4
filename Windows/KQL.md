@@ -1,4 +1,4 @@
-# Azure Sentinel 
+# KQL for Azure Sentinel database searches
 ## Use KQL to grab useful information for hacking
 Taken from: https://www.youtube.com/watch?v=DuWBLsgqhaI
 
@@ -15,7 +15,7 @@ Perf
 | order by UpTime desc
 ```
 
-## explination
+## Explination:
 ```
 Perf                                                                  <== Performance info from Azure Monitor 
 | Where ObjectName == "System"                                        <== System performace counters
