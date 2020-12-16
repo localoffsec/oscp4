@@ -5,6 +5,17 @@
 -p port ports, port - range
 ```
 
+## Update Script Database: 
+```
+nmap --script-updatedb
+```
+
+## NMAP Scripts:
+```
+nmap --script vulners
+nmap --script vulns
+```
+
 ## scan: -s
 
 P  ping
