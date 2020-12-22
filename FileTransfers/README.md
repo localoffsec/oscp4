@@ -187,5 +187,8 @@ systemctl enable postgresql
 systemctl enable ssh 
 systemctl disable ssh
 ```
-
+# Zip Bomb:
+```
+dd if=/dev/zero bs=1M count=1024 | zip -9 > bomb.zip
+```
 
