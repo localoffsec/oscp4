@@ -46,6 +46,7 @@ nmap -sS target					SYN scan
 nmap -sT target					TCP scan
 nmap -sU target					UDP scan
 nmap -sV target					Service Version Detection
+nmap -sO target					look for open ports
 nmap -O target					Passive OS Detection requires -sV flag set
 nmap -A target					Acitve OS Detection requires -sV flag set
 nmap -sI target					IDLE (Zombie) scan
