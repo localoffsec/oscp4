@@ -58,7 +58,13 @@ nano ~./bashrc
 git clone https://github.com/ciwen3/OSCP.git
 ```
 
-### 9. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
+### 9. Flameshot Configuration: 
+right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
+
+to automatically take screenshots (every 60 seconds) run this in terminal. 
+```
+while true; do flameshot full -p ~/Pictures/ ; sleep 60 ; done
+```
 
 ### 10. CherryTree Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
 
