@@ -71,7 +71,7 @@ sudo apt install asciinema -y
 ```
 add the following to the bottom of ~/.bashrc and ~/.zshrc
 ```
-asciinema rec ~/asccinema/OSCP-$(date +"%d-%b-%Y-%T").cast
+asciinema rec ~/asciinema/OSCP-$(date +"%d-%b-%Y-%T").cast
 ```
 
 # Setup Windows 10 VM
