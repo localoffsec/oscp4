@@ -58,13 +58,11 @@ nano ~./bashrc
 git clone https://github.com/ciwen3/OSCP.git
 ```
 
-### 9. Install Impacket - pip install impacket (https://github.com/SecureAuthCorp/impacket)
+### 9. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
 
-### 10. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
+### 10. CherryTree Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
 
-### 11. CherryTree Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
-
-### 12. Record Terminal output
+### 11. Record Terminal output
 install asciinema 
 ```
 sudo apt install asciinema -y && mkdir ~/asciinema
