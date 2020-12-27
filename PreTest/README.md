@@ -4,7 +4,7 @@
 
 ### 2. Update Kali: 
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot expect python3 python3-pip asciinema
+sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot expect python3 python3-pip asciinema cherrytree
 ```
 
 ### 3. Install pip for Python2: 
@@ -118,5 +118,4 @@ asciinema rec ~/asciinema/OSCP-$(date +"%d-%b-%Y-%T").cast
 
 ## Not sure about:
 ### 1. Install OBS studio?? gnome-screenshot?? imagemagick??
-### 2. cherrytree - https://launchpad.net/~giuspen/+archive/ubuntu/ppa/+packages
-### 3. 
+### 2. 
