@@ -67,7 +67,7 @@ git clone https://github.com/ciwen3/OSCP.git
 ### 12. Record Terminal output
 install asciinema 
 ```
-sudo apt install asciinema -y
+sudo apt install asciinema -y && mkdir ~/asciinema
 ```
 add the following to the bottom of ~/.bashrc and ~/.zshrc
 ```
