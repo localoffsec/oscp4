@@ -66,7 +66,8 @@ to automatically take screenshots (every 60 seconds) run this in terminal.
 while true; do flameshot full -p ~/Pictures/ ; sleep 60 ; done
 ```
 
-### 10. CherryTree Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
+### 10. CherryTree 
+Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
 
 ### 11. Record Terminal output
 install asciinema 
