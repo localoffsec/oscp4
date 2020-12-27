@@ -4,7 +4,7 @@
 
 ### 2. Update Kali: 
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot expect python3 python3-pip
+sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot expect python3 python3-pip asciinema
 ```
 
 ### 3. Install pip for Python2: 
@@ -63,6 +63,16 @@ git clone https://github.com/ciwen3/OSCP.git
 ### 10. Flameshot Configuration: right click on the flameshot icon > Configuration > General > uncheck "Show Desktop Notifications"
 
 ### 11. CherryTree Configuration: Edit > Preferences > Miscellaneous > Auto Save Every __ Minutes
+
+### 12. Record Terminal output
+install asciinema 
+```
+sudo apt install asciinema -y
+```
+add the following to the bottom of ~/.bashrc and ~/.zshrc
+```
+asciinema rec ~/asccinema/OSCP$(date +"%d-%b-%Y-%T").cast
+```
 
 # Setup Windows 10 VM
 ## Settings:
