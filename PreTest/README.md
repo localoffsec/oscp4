@@ -80,6 +80,7 @@ asciinema rec ~/asciinema/OSCP-$(date +"%d-%b-%Y-%T").cast
 ```
 
 ### 12. Setup and test MSFConsole (just in case)
+https://github.com/ciwen3/OSCP/blob/master/Metasploit/MSFconole.md
 
 # Setup Windows 10 VM
 ## Settings:
