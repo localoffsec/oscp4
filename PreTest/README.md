@@ -122,7 +122,7 @@ https://github.com/ciwen3/OSCP/blob/master/Metasploit/MSFconole.md
 4. Login to OSCP website
 
 # TODO:
-1. 
+1. Script to automatically do all the things on this list. 
 
 ## Not sure about:
 ### 1. Install OBS studio?? gnome-screenshot?? imagemagick??
