@@ -79,6 +79,8 @@ add the following to the bottom of ~/.bashrc and ~/.zshrc
 asciinema rec ~/asciinema/OSCP-$(date +"%d-%b-%Y-%T").cast
 ```
 
+### 12. Setup and test MSFConsole (just in case)
+
 # Setup Windows 10 VM
 ## Settings:
 1. Antivirus turned off
