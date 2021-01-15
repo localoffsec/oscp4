@@ -4,7 +4,9 @@
 
 ### 2. Update Kali: 
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot expect python3 python3-pip asciinema cherrytree
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt update && sudo apt upgrade -y && sudo apt install -y curl wget ssh openvpn git flameshot expect python3 python3-pip asciinema cherrytree virtualbox
 ```
 
 ### 3. Install pip for Python2: 
@@ -116,8 +118,8 @@ https://github.com/ciwen3/OSCP/blob/master/Metasploit/MSFconole.md
 	Ctrl + Alt + PrtSc – Copy the screenshot of the current window to the clipboard.
 	```
 2. start script to auto upload my notes and screenshoots to private github account
-
 	https://github.com/ciwen3/OSCP/blob/master/PreTest/Auto-Upload.md
+	
 3. connect OSCP VPN
 4. Login to OSCP website
 
