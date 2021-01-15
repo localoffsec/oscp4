@@ -48,7 +48,7 @@ shopt -s lithist
 taken from: https://www.contextis.com/en/blog/logging-like-a-lumberjack
 ```
 cp ~/.bashrc ~/.bashrc.back
-nano ~./bashrc
+nano ~/.bashrc
 # find the line(s) with PS1= and 
 # add the following inside the ' '
 [`date +"%d-%b-%Y %T"`] > 
