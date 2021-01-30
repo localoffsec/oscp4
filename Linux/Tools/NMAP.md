@@ -44,6 +44,7 @@ U  udp scan
 ```
 mkdir nmap
 sudo nmap -sC -sV -oA nmap/<file-name> <ip-address>
+sudo nmap -p- -v -oA nmap/<file-name>-allports <ip-address>
 
 ```
 
