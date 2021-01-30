@@ -39,6 +39,15 @@ U  udp scan
 -n  Disable DNS lookup
 ```
 
+
+## First run 
+```
+mkdir nmap
+sudo nmap -sC -sV -oA nmap/<file-name> <ip-address>
+
+```
+
+
 ## Nmap Basic Commands
 ```
 COMMAND						DESCRIPTION
