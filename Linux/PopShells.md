@@ -2,6 +2,12 @@ Side note:
 check for /bin/dash
 Bash likes to drop setuid permissions but Dash will not
 
+## Repo of shells you can upload 
+https://github.com/tennc/webshell
+```
+git clone https://github.com/tennc/webshell.git
+```
+
 # Search for Commands that run as Root:
 ## list all programs this account has sudo access to
 ```
